@@ -5,14 +5,11 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-/**
- * Created by Павел on 21.08.2016.
- */
 public class CalculateTest {
 
     @Test
     public void getAnsuer() throws Exception {
-        Calculate calculate = new Calculate();
+        Calculate calculate = new CalculateImpl();
         assertEquals(null, calculate.getAnsuer("(5.89*(6+56))-6/0"));
     }
     /*все тесты работают
